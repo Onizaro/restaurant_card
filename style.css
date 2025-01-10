@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 body {
     text-align: center;
@@ -16,12 +23,12 @@ body {
 
 nav {
     display : flex;
+    background-color:black;
+    top: 0;
     justify-content: space-around;
     width: 85vw;
     overflow: hidden;
-    border-bottom: 1px solid black;
     position: fixed;
-    top: 0;
     left: 7.5vw;
 }
 
@@ -29,6 +36,13 @@ h1 {
     font-family: "Imperial Script", serif;
     font-size: 5em;
     font-weight: 500;
+    width: 18vw;
+    border-radius: 25px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
 }
 
 h2 {
@@ -37,12 +51,51 @@ h2 {
     font-weight: 500;
 }
 
+.menu-title {
+    color: white;
+}
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: "Bebas Neue", serif;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 
 #menu {
-    border: 3px solid black;
+    border: 2px solid black;
     width: 40vw;
+    border-radius: 35px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3, p {
+    font-family: "Funnel Display", serif;
+}
+
+.dish {
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        position: relative;
+    }
+}
+
+#img1 {
+    left: -15px;
 }
